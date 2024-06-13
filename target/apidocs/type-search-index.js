@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"edu.escuelaing.arsw.ASE.app","l":"CountLines"},{"p":"edu.escuelaing.arsw.ASE.app","l":"Example"},{"p":"edu.escuelaing.arsw.ASE.app","l":"Example2"},{"p":"edu.escuelaing.arsw.ASE.app","l":"LineCounter"}];updateSearchResults();

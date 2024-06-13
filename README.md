@@ -126,6 +126,8 @@ In these tests we compare that the physical lines of the *Example.java* file are
 For the design, the following class diagram was made. In which it was considered to have a class for all the methods that were going to be counted and the main class that uses these methods.
 The methods considered are 3:
 
+* main: It is the main entry point of a program. It is the function or method where the execution of the program begins.
+
 * getFiles: to get the files from the path.
 
 * countPhysicalLines: count physical lines.
@@ -134,6 +136,26 @@ The methods considered are 3:
 
 ![img_1.png](images%2Fimg_1.png)
 
+### Phase architecture
+
+to be able to run the application using "*java -jar*" including in the "pom.xml" file and specifying the main class.
+```
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.1.0</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <mainClass>edu.escuelaing.arsw.ASE.app.CountLines</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+```
 ## Built with
 
 * [Maven](https://maven.apache.org/) - Dependency management
